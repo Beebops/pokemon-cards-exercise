@@ -8,7 +8,7 @@ import './PokeDex.css'
  * Can also add a new card at random,
  * or from a dropdown of available pokemon. */
 function PokeDex() {
-  const [initialPokemonName, setInitialPokemonName] = useState('pikachu')
+  const [initialPokemonName, setInitialPokemonName] = useState('')
   const [pokemon, addPokemon] = useAxios(
     'https://pokeapi.co/api/v2/pokemon/',
     initialPokemonName
